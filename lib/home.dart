@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
       //AppBar: Una barra d'aplicacions consisteix en una barra d'eines i potencialment altres ginys, com TabBar i FlexibleSpaceBar.
       appBar: AppBar(
         title: const Text('TeckWeek 2023: Flutter'),
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.red,
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.add_alert),
@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
           //Finestra emergent
           showDialog(
             context: context,
-            builder: (context) => AlertDialog(
+            builder: (context) => SimpleDialog(
               content: Text('Aixo es un FloatingActionButton'),
               actions: <Widget>[
                 IconButton(
@@ -44,6 +44,8 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.purple,
         child: const Icon(Icons.info_outline),
       ),
+
+
 
       //SafeArea: Permet que el contiogut no es sobresurti a parts no visibles per le HUD del dispositiu.
       body: SafeArea(
@@ -266,7 +268,7 @@ class Home extends StatelessWidget {
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.only(left: 10, top: 15),
               child: Text(
-                'Imatges i icones',
+                'Bernat Del Solar',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
               ),
             ),
@@ -274,7 +276,7 @@ class Home extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Image.asset(
-                  'assets/images/image.jpg',
+                  'assets/images/Persona.jpg',
                   width: 200,
                   height: 200,
                 ),
